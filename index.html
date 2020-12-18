@@ -13,12 +13,12 @@
     </header>
     <section><h1>1~100</h1></section>
     <section class="container">
-        <input type="number">
+        <input type="number" id="numberInput" placeholder="Type in a number">
         <div class="button">
-            <button id="startClick" class="click">
+            <button id="startClick" class="click" onclick="clickGuess()">
                 Click
             </button>
-            <button class="reset">
+            <button id="resetClick" class="reset" onclick="reset()">
                 Reset
             </button>
         </div>
