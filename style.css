@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  margin-top: 4em;
+}
+
+.title h1 {
+  font-size: 8em;
+  text-align: center;
+  margin-top: 24px;
+  margin-bottom: 80px;
+}
+
+#number-input {
+  width: 500px;
+}
+
+#header {
+  background: linear-gradient(#032e71, #034791);
+  height: 150px;
+  width: 100%;
+  color: white;
+}
+
+#header h1 {
+  text-align: center;
+  font-size: 4em;
+  margin-top: 36px;
+}
+
+#buttons {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons button {
+  margin: 10px;
+}
+
+.list-group-item {
+  list-style: none;
+  text-align: center;
+  font-size: 1.5em;
+}
