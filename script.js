@@ -5,13 +5,14 @@ let correctNumb = randomNumber();
 
 window.onload = () => {
   document.getElementById('startClick').addEventListener('click', playGame);
-  console.log(correctNumb)
   document.getElementById('resetClick').addEventListener('click', reset);
 };
 
 const playGame = () => {
   let numb = document.getElementById("numberInput").value;
   displayGuesses(numb);
+  saveHistory(numb);
+  displayHistory();
 };
 
 function randomNumber() {
@@ -20,11 +21,15 @@ function randomNumber() {
 };
 
 const reset = () => {
+  correctNumb;
+  document.getElementById('guess_display').innerHTML = '';
+  guesses = [];
+  displayHistory();
 };
 
 // Logic on inputting number from 1-100
 
-// Display number History
+// Display number guess panel
 const displayGuesses = (numb) => {
   if (numb > correctNumb) {
     showGuessHigh();
@@ -80,4 +85,22 @@ const showError = () => {
   let dialog = getDialog('error', text);
   document.getElementById('guess_display').innerHTML = dialog;
 };
-//Display to compare the input number and random number
+
+// Display History
+let guesses = [];
+
+const saveHistory = (guess) => {
+  guesses.push(guess);
+}
+
+// Let's review this one thoroughly...
+const displayHistory = () => {
+  let i = guesses.length -1;
+  let list = '<ul class="historyList">';
+  while (i >= 0) {
+    list += `<li class="list">You Guessed ${guesses[i]}</li>`;
+    i -= 1;
+  };
+  list += '</ul>';
+  document.getElementById('result_records').innerHTML = list;
+}
