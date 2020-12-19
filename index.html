@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guess The Number</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess The Number</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-    <script src="script.js"></script>
-    <header>
-        <h1>Guess The Number!</h1>
-    </header>
-    <section><h1>1~100</h1></section>
-    <section class="container">
-        <input type="number" id="numberInput" placeholder="Type in a number">
-        <div class="button">
-            <button id="startClick" class="btn btn-lg btn-primary">
-                Check
-            </button>
-            <button id="resetClick" class="btn btn-lg btn-warning">
-                Reset
-            </button>
-        </div>
-        <div id='guess_display' class="guessDisplay"></div>
-        <div id="result_records" class="results">
-        </div>
+  <script src="script.js"></script>
+  <header>
+    <h1>Guess The Number!</h1>
+  </header>
+  <br>
+  <div class="body__container">
+    <section>
+      <h1>1~100</h1>
     </section>
-    <footer>
-        Made with Love by Brian 경훈 Kim
-    </footer>
+    <section class="container">
+      <input type="number" id="numberInput" class="form-control-lg" placeholder="Type in a number">
+      <div class="buttons">
+        <button id="startClick" class="btn btn-lg btn-primary">
+          Check
+        </button>
+        <button id="resetClick" class="btn btn-lg btn-warning">
+          Reset
+        </button>
+      </div>
+      <div id='guess_display' class="guessDisplay"></div>
+      <div id="result_records" class="results">
+      </div>
+    </section>
+    <br>
+  </div>
+  <footer>
+    <p>Made with Love by Brian 경훈 Kim</p>
+  </footer>
 </body>
+
 </html>
