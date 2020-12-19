@@ -21,7 +21,7 @@ function randomNumber() {
 };
 
 const reset = () => {
-  correctNumb;
+  correctNumb = randomNumber();
   document.getElementById('guess_display').innerHTML = '';
   guesses = [];
   displayHistory();
